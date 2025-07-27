@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+    <title>Reno</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Reno</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#certifications">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Reno</div>
+        <div class="hamburger-menu">
+        <img src="components/list.svg" alt="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">certifications</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile-pic-container">
+            <img src="components/paimon.jpg" alt="profile-picture" class="profile-pic">
+        </div>
+        <div class="profile-text">
+            <p>Hi I am</p>
+            <h1>Reno</h1>
+            <h4>Web Developer</h4>
+            <button class="resume-btn btn" onclick="window.open('components/myResume.pdf')">Get Resume</button>
+            <button class="contact-btn btn">Contact</button>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-title">About</div>
+        <div class="about-cards">
+        <div class="about-section">
+            <h6>Me:</h6>
+            <p>I'm an aspiring Full Stack Web Developer who loves turning ideas into interactive web apps. I'm always curious, always building, and always breaking (and fixing) things to learn more. </p>
+        </div>
+        <div class="studies">
+            <h6>Studies:</h6>
+            <p><span>Schooling:</span> Good Shepherd Matriculation higher secondary School, Marthandam</p>
+            <p><span>BTech:</span> SRM Institute of Science and Technology, Chennai</p>
+        </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="experience-title">Experience</div>
+        <div class="experience-grid">
+            <div class="tech-stack-container">
+                <div class="tech-stack-profile">
+                    <img src="components/icons8-html5-50.png" alt="html icon">
+                </div>
+                <div class="tech-stack-content">
+                    <h6>HTML</h6>
+                    <p>Experienced</p>
+                </div>
+            </div>
+            <div class="tech-stack-container">
+                <div class="tech-stack-profile">
+                    <img src="components/icons8-css3-50.png" alt="css icon">
+                </div>
+                <div class="tech-stack-content">
+                    <h6>CSS</h6>
+                    <p>Experienced</p>
+                </div>
+            </div>
+            <div class="tech-stack-container">
+                <div class="tech-stack-profile">
+                    <img src="components/icons8-javascript-50.png" alt="javascript icon">
+                </div>
+                <div class="tech-stack-content">
+                    <h6>JavaScript</h6>
+                    <p>Experienced</p>
+                </div>
+            </div>
+            <div class="tech-stack-container">
+                <div class="tech-stack-profile">
+                    <img src="components/icons8-python-50.png" alt="python icon">
+                </div>
+                <div class="tech-stack-content">
+                    <h6>Python</h6>
+                    <p>Experienced</p>
+                </div>
+            </div>
+            <div class="tech-stack-container">
+                <div class="tech-stack-profile">
+                    <img src="components/icons8-mongodb-24.png" alt="mongodb icon">
+                </div>
+                <div class="tech-stack-content" style="margin-left: 15px;">
+                    <h6>MongoDB</h6>
+                    <p>Experienced</p>
+                </div>
+            </div>
+            <div class="tech-stack-container">
+                <div class="tech-stack-profile">
+                    <img src="components/icons8-mysql-50.png" alt="mysql icon">
+                </div>
+                <div class="tech-stack-content">
+                    <h6>MySQL</h6>
+                    <p>Experienced</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications">
+        <div class="certification-title">Certifications</div>
+        <div class="certification-grid">
+            <div class="certification-card">
+                <img src="components/MongoDB.png" alt="MongoDB Certificate" class="certificate">
+                <div class="certification-content">
+                    <h6 class="certificate-title">MongoDB Associate</h6>
+                    <h6 class="certificate-title">Developer</h6>
+                    <p class="certificate-provider">MongoDB University</p>
+                </div>
+            </div>
+            <div class="certification-card">
+                <img src="components/CloudComputing.png" alt="Cloud Computing certificate" class="certificate">
+                <img src="components/icons8-clown-50.png" alt="clown sticker" class="clown-pfp1">
+                <div class="certification-content">
+                    <h6 class="certificate-title">Cloud Computing</h6>
+                    <p class="certificate-provider">NPTEL</p>
+                </div>
+            </div>
+            <div class="certification-card">
+                <img src="components/Programming in Java.png" alt="Programming in Java Certificate" class="certificate">
+                <img src="components/icons8-clown-50.png" alt="clown sticker" class="clown-pfp2">
+                <div class="certification-content">
+                    <h6 class="certificate-title">Programming in Java</h6>
+                    <p class="certificate-provider">NPTEL</p>
+                </div>
+            </div>
+            <div class="certification-card">
+                <img src="components/networking.png" alt="Networking Basics Certificate" class="certificate">
+                <div class="certification-content">
+                    <h6 class="certificate-title">Networking Basics</h6>
+                    <p class="certificate-provider">CISCO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-title">Contact</div>
+        <div class="contact-grid">
+            <div class="contact-cards">
+                <img src="components/icons8-github-64.png" alt="github icon" class="github-icon">
+                <a href="https://github.com/rzn0v">Github</a>
+            </div>
+            <div class="contact-cards">
+                <img src="components/icons8-gmail-24.png" alt="gmail icon" class="gmail-icon">
+                <p><a href="mailto:rr1148@srmist.edu.in">GMail</a></p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Copyright <span style="font-family: 'Courier New', Courier, monospace;">&#169;</span> 2025 Reno. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
