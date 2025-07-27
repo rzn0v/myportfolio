@@ -330,7 +330,7 @@ a{
         display: flex;
         flex-direction: column;
         gap: 40px;
-        width: 450px;
+        width: 400px;
         align-items: center;
     }
     .about-section, .studies{
