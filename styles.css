@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bitcount Grid Single';
+}
+html{
+    scroll-behavior: smooth;
+}
+nav, .nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-links{
+    gap: 2rem;
+    font-size: 1.5rem;
+    list-style: none;
+    margin-right: 35px;
+}
+.logo{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-decoration-color: white;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: grey;
+}
+#hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 35px;
+}
+.menu-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+
+/*Profile */
+#profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 140px;
+}
+.profile-pic{
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 500px;
+}
+.profile-text{
+    font-size: 4rem;
+}
+.btn{
+    padding: 20px;
+    font-family: 'Bitcount Grid Single';
+    font-size: 18px;
+}
+.resume-btn{
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: white;
+    cursor: pointer;
+}
+.resume-btn:hover{
+    background-color: black;
+    color: white;
+}
+.contact-btn{
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    background-color: grey;
+    color: black;
+    border: none;
+}
+.about-title, .experience-title, .certification-title, .contact-title{
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 140px;
+}
+.about-section{
+    max-width: 600px;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 35px;
+}
+.about-section h6{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.about-section p{
+    font-size: 25px;
+    line-height: 1.8;
+}
+.studies{
+    display: inline-block;
+    max-width: 600px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 35px;
+}
+.studies h6{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.studies p{
+    font-size: 25px;
+    line-height: 1.8;
+}
+.studies p span{    
+    font-weight: bold;
+}
+.tech-stack-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 35px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.tech-stack-content{
+    margin-left: 10px;
+}
+.tech-stack-content h6{
+    font-size: 26px;
+}
+.tech-stack-container p{
+    font-size: 18px;
+}
+.experience-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+#experience{
+    margin-bottom: 140px;
+}
+#certifications{
+    margin-bottom: 140px;
+}
+.certification-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 100px;
+    justify-items: center;
+}
+.certification-card{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 35px;
+    border-radius: 35px;
+    position: relative;
+    margin: 10px;
+    max-width: none;
+}
+.certification-content{
+    margin-top: 15px;
+}
+.certification-content h6{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.certification-content p{
+    font-size: 18px;
+}
+.certificate{
+    height: 350px;
+}
+.clown-pfp1{
+    position: absolute;
+    height: 70px;
+    right: 40px;
+    top: 100px;
+}
+.clown-pfp2{
+    position: absolute;
+    height: 70px;
+    right: 40px;
+    top: 40px;
+}
+#contact{
+    margin-bottom: 140px;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+.contact-cards{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 35px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    height: 95px;
+}
+.contact-cards a{
+    margin-left: 20px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.gmail-icon{
+    height: 30px;
+}
+#footer{
+    height: 140px;
+    display: flex;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: end;
+    font-size: 16px;
+}
+
+
+
+
+
+@media screen and (max-width: 1170px){
+    .experience-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .certification-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto;
+    }
+    .about-section, .studies{
+        max-width: 500px;
+    }
+    .contact-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 860px){
+    #desktop-nav{
+        display: none;
+    }
+    .profile-pic{
+        height: 400px;
+        width: 400px;
+    }
+    .profile-text{
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .about-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 350px;
+        align-items: center;
+    }
+    .about-section, .studies{
+        max-width: none;
+    }
+    .experience-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .certificate{
+        height: 200px;
+    }
+    .clown-pfp1, .clown-pfp2{
+        height: 60px;
+    }
+    .clown-pfp1{
+        top: 93px;
+    }
+}
+
