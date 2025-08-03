@@ -345,10 +345,14 @@ a{
         height: 200px;
     }
     .clown-pfp1, .clown-pfp2{
-        height: 60px;
+        height: 40px;
     }
     .clown-pfp1{
-        top: 93px;
+        top: 73px;
+    }
+    .clown-pfp2{
+        right: 53px;
     }
 }
+
 
